@@ -1,0 +1,209 @@
+
+/* General Page Design */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf8f6;
+    color: #294b4a;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: #286f6b;
+    background-color: #d5efea;
+    padding: 25px;
+    margin: 0 0 10px;
+    border-radius: 12px;
+}
+
+body > p {
+    text-align: center;
+    color: #668581;
+    margin-bottom: 30px;
+}
+
+/* Section Headings */
+h2 {
+    color: #286f6b;
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 22px;
+}
+
+/* Center Add Product Heading */
+#addProductHeading {
+    text-align: center;
+}
+
+/* Horizontal Lines */
+hr {
+    border: none;
+    border-top: 1px solid #c8e3de;
+    margin: 28px 0;
+}
+
+/* Summary Section */
+p:has(span) {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #d4eae5;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 5px 10px 10px 0;
+    min-width: 200px;
+    box-shadow: 0 2px 6px #dcece8;
+}
+
+p span {
+    color: #287c78;
+    font-weight: bold;
+}
+
+/* Product Form - Centered Box */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #d2e8e3;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    box-shadow: 0 3px 10px #dcece8;
+}
+
+/* Form Labels */
+form label {
+    display: inline-block;
+    width: 140px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #456c68;
+}
+
+/* Input Fields and Dropdowns */
+input,
+select {
+    padding: 11px;
+    border: 1px solid #bddbd5;
+    border-radius: 6px;
+    background-color: #fbfefd;
+    color: #294b4a;
+    font-size: 14px;
+    max-width: 100%;
+}
+
+form input,
+form select {
+    width: 250px;
+    margin-bottom: 4px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #8acfc3;
+    border-color: #65b8ad;
+}
+
+/* Buttons */
+button {
+    background-color: #55a99e;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #347f77;
+}
+
+/* Search and Filter */
+#searchProduct,
+#filterCategory {
+    margin: 0 12px 18px 0;
+    min-width: 180px;
+}
+
+/* Table Design */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #dcece8;
+}
+
+/* Table Headings */
+th {
+    background-color: #ccebe5;
+    color: #286b67;
+    font-weight: bold;
+}
+
+/* Table Cells */
+th,
+td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0eeeb;
+}
+
+/* Alternate Rows */
+tbody tr:nth-child(even) {
+    background-color: #f0f9f7;
+}
+
+tbody tr:hover {
+    background-color: #dff2ed;
+}
+
+/* Mobile Layout */
+@media (max-width: 700px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 18px;
+    }
+
+    p:has(span) {
+        display: block;
+        margin-right: 0;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    form label {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    form input,
+    form select {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px 6px;
+    }
+}
